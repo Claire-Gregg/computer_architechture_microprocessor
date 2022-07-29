@@ -1,0 +1,23 @@
+As requested, I am including a note on the difference between my simulation details and those provided at the end of this assignment.
+Following the instructions in slideset 6 on the processor, I instantiated each bit of the ALU individually rather than building up each component fully and then combining them.
+When given the simulation details on Friday the 12th, I already had a fully functioning datapath, and was told to demonstrate the functioning of my datapath appropriately. 
+Therefore, the following sections of the simulation details have changed:
+ - 32-Bit Ripple carry adder
+ - B_Input_logic
+ - 32-Bit Ripple Carry Adder Subtractor
+ - 32 bit logic circuit
+
+The simulation details which were requested to be tested on the 32-bit ripple adder were instead tested on the 32 bit ALU with S = 001. 
+This simulation was named ArithmeticLogicUnit32Bit_TB_RippleCarryAdder. 
+
+The simulation details which were requested to be tested on the B_Input_logic were instead tested on the ALU with A = 0 and 0XX where the xs selects the output.
+This simulation was named ArithmeticLogicUnit32Bit_TB_BInputLogic.
+
+The simulation details which were requested to be tested on the 32-bit ripple adder-subtractor were instead tested on the 32 bit ALU with S = 0XX where the xs act as s0 and s1.
+This simulation was named ArithmeticLogicUnit32Bit_TB_RippleAdderSubtractor.
+
+The simulation details which were requested to be tested on the 32-bit logic circuit were instead tested on the 32 bit ALU with S = 1XX where xs act as select bits.
+
+For ease of simulation, the testing that the negative flag worked and the testing that the zero flag worked were combined.
+
+All other files were included, such that when they are imported into Vivado, all functionality works as intended.
